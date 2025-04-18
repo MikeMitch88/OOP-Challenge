@@ -47,5 +47,6 @@ class Pet:
         print(f"Hunger: {self.hunger}")
         print(f"Energy: {self.energy}")
         print(f"Happiness: {self.happiness}")
+        print(f"Tricks: {', '.join(self.tricks) if self.tricks else 'None'}")
 
         # TODO
