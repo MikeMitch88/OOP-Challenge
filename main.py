@@ -23,7 +23,7 @@ def main():
         elif choice == '3':
             pet.play()
         elif choice == '4':
-            trick = input("✨ Enter a trick for your pet to learn: ")
+            trick = input("✨ Enter a trick for your pet to learn: ").upper()
             pet.train(trick)
         elif choice == '5':
             pet.show_tricks()

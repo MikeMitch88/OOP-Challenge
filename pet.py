@@ -36,7 +36,7 @@ class Pet:
         if self.happiness > 0:
             self.tricks.append(trick)
             self.happiness = min(10, self.happiness + 1)
-            print(f"🎓 {self.name} learned a new trick: {trick}! Amazing!")
+            print(f"🎓 {self.name} learned a new trick: \033[92m{trick}\033[0m! Amazing!")
         else:
             print(f"😔 {self.name} is too sad to learn new tricks.")
 
@@ -51,4 +51,4 @@ class Pet:
         print(f"🍗 Hunger: {self.hunger}")
         print(f"⚡ Energy: {self.energy}")
         print(f"😊 Happiness: {self.happiness}")
-        print(f"🤹 Tricks: {', '.join(self.tricks) if self.tricks else 'None'}".uppercase())
+        print(f"🤹 Tricks: {', '.join(self.tricks) if self.tricks else 'None'}".upper())  # Cyan color for tricks
