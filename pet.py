@@ -43,13 +43,13 @@ class Pet:
 
     def show_tricks(self):
         if self.tricks:
-            print(f"🤹 \033[94m{self.name}\033[0m! knows the following tricks: {', '.join(self.tricks)}")
+            print(f"🤹 \033[94m{self.name}\033[0m! knows the following tricks: \033[92m{', '.join(self.tricks)}\033[0m!")
         else:
-            print(f"🙃 \033[94m{self.name}\033[0m! doesn't know any tricks yet.")
+            print(f"🙃 {self.name} doesn't know any tricks yet.")
 
     def get_status(self):
         print(f"📋 \033[94m{self.name}\033[0m!'s status:")
         print(f"🍗 Hunger: {self.hunger}")
         print(f"⚡ Energy: {self.energy}")
         print(f"😊 Happiness: {self.happiness}")
-        print(f"🤹 Tricks: \033[94m{', '.join(self.tricks) if self.tricks else 'None'}\033[0m!".upper())  # Cyan color for tricks
+        print(f"🤹 Tricks: \033[92m{', '.join(self.tricks) if self.tricks else 'None'}\033[0m!")
